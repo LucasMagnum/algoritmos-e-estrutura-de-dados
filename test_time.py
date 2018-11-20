@@ -2,7 +2,11 @@ import contextlib
 import random
 import time
 
-from sorting import bubble_sort
+
+from sorting import (
+    bubble_sort,
+    selection_sort
+)
 
 
 @contextlib.contextmanager
@@ -36,9 +40,11 @@ if __name__ == '__main__':
 
     algorithms = {
         "bubble_sort": bubble_sort.sort,
+        "selection_sort": selection_sort.sort,
     }
 
     print("Sorting random array")
+    print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(normal_array)
 
@@ -47,8 +53,8 @@ if __name__ == '__main__':
 
         assert copy_array == sorted(normal_array)
 
-    """
-    print("Sorting nearly sorted array")
+    print("\n\nSorting nearly sorted array")
+    print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(nearly_sorted)
 
@@ -57,7 +63,8 @@ if __name__ == '__main__':
 
         assert copy_array == sorted(nearly_sorted)
 
-    print("Sorting reversed sorted array")
+    print("\n\nSorting reversed sorted array")
+    print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(reversed_array)
 
@@ -65,4 +72,3 @@ if __name__ == '__main__':
             sort(copy_array)
 
         assert copy_array == sorted(reversed_array)
-    """
