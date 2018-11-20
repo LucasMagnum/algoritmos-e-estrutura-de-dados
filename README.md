@@ -1,8 +1,7 @@
-Algoritmos
-==========
+Algoritmos e Estrutura de dados
+===============================
 
 Repositório do Curso de Algoritmo e Estrutura de dados.
-
 
 O curso é voltado para iniciantes, onde o objetivo é fornecer uma base teórica
 e prática em algoritmos.
