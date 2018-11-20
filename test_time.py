@@ -2,10 +2,10 @@ import contextlib
 import random
 import time
 
-
 from sorting import (
     bubble_sort,
-    selection_sort
+    selection_sort,
+    insertion_sort,
 )
 
 
@@ -41,6 +41,7 @@ if __name__ == '__main__':
     algorithms = {
         "bubble_sort": bubble_sort.sort,
         "selection_sort": selection_sort.sort,
+        "insertion_sort": insertion_sort.sort,
     }
 
     print("Sorting random array")
