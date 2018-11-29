@@ -6,6 +6,7 @@ from sorting import (
     bubble_sort,
     selection_sort,
     insertion_sort,
+    merge_sort,
 )
 
 
@@ -28,7 +29,7 @@ def nearly_sorted_array(size):
 
 
 if __name__ == '__main__':
-    number_of_items = 1001
+    number_of_items = 5001
 
     normal_array = [random.randint(0, number_of_items)
                     for i in range(number_of_items)]
@@ -39,9 +40,10 @@ if __name__ == '__main__':
     sorted_array = sorted(normal_array)
 
     algorithms = {
-        "bubble_sort": bubble_sort.sort,
-        "selection_sort": selection_sort.sort,
+        #"bubble_sort": bubble_sort.sort,
+        #"selection_sort": selection_sort.sort,
         "insertion_sort": insertion_sort.sort,
+        "merge_sort": merge_sort.sort,
     }
 
     print("Sorting random array")
